@@ -1,18 +1,35 @@
 ---
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/global.css';
+import Logo from "../assets/doveandlogo.jpg";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image" href="/9thfavicon.png" />
+		<link rel="icon" href="/9thfavicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>The 9th Ward</title>
 	</head>
 	<body>
-		<h1>The 9th Ward</h1>
+		<div class="d-flex justify-content-center nav pb-5">
+			<ul class="list-group list-group-horizontal">
+				<li class="list-group-item"><a href="/about">About</a></li>
+				<li class="list-group-item"><a href="/shows">Shows</a></li>
+				<li class="list-group-item"><a href="/merch">Merch</a></li>
+				<li class="list-group-item"><a href="/contact">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<img class="logo" src={Logo.src}>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script>
         import 'bootstrap/dist/js/bootstrap.bundle.min.js';

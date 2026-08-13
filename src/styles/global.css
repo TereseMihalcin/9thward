@@ -1,0 +1,19 @@
+.logo {
+    max-width: 500px;
+}
+ul.list-group-horizontal {
+    list-style: none;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 0px;
+}
+ul li {
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: unset !important;
+}
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+}
